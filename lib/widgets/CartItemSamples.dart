@@ -11,7 +11,7 @@ class CartItemSamples extends StatelessWidget {
         for (int i = 1; i < 3; i++)
           Container(
             height: 110,
-            margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
@@ -27,10 +27,10 @@ class CartItemSamples extends StatelessWidget {
                 Container(
                   height: 70,
                   width: 70,
-                  margin: EdgeInsets.only(right: 15),
+                  margin: const EdgeInsets.only(right: 15),
                   child: Image.asset('images/$i.jpeg'),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,9 +55,10 @@ class CartItemSamples extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -87,8 +88,8 @@ class CartItemSamples extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.symmetric(horizontal: 10),
-                            child: Text(
+                            margin: const EdgeInsets.symmetric(horizontal: 10),
+                            child: const Text(
                               "01",
                               style: TextStyle(
                                 fontSize: 16,

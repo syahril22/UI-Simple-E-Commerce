@@ -38,10 +38,11 @@ class HomeAppBar extends StatelessWidget {
             ),
             child: InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "cartPage");
+                Navigator.pushNamed(context, "messageListPage");
               },
               child: const Icon(
-                Icons.shopping_bag_outlined,
+                // Icons.shopping_bag_outlined,
+                Icons.chat_outlined,
                 size: 32,
                 color: Color(0xFF4C53A5),
               ),

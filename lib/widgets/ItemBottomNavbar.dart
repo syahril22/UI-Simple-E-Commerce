@@ -18,14 +18,14 @@ class ItemBottomNavBar extends StatelessWidget {
               color: Colors.grey.withOpacity(0.5),
               spreadRadius: 3,
               blurRadius: 10,
-              offset: Offset(0, 3),
+              offset: const Offset(0, 3),
             )
           ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               '\$120',
               style: TextStyle(
                 fontSize: 25,
@@ -35,8 +35,8 @@ class ItemBottomNavBar extends StatelessWidget {
             ),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(CupertinoIcons.cart_badge_plus),
-              label: Text(
+              icon: const Icon(CupertinoIcons.cart_badge_plus),
+              label: const Text(
                 'Add to Cart',
                 style: TextStyle(
                   fontSize: 16,
@@ -45,19 +45,21 @@ class ItemBottomNavBar extends StatelessWidget {
                 ),
               ),
               style: ButtonStyle(
-                  backgroundColor: WidgetStateProperty.all(
-                    Color(0xFF4C53A5),
+                backgroundColor: WidgetStateProperty.all(
+                  const Color(0xFF4C53A5),
+                ),
+                padding: WidgetStateProperty.all(
+                  const EdgeInsets.symmetric(
+                    vertical: 13,
+                    horizontal: 15,
                   ),
-                  padding: WidgetStateProperty.all(
-                    EdgeInsets.symmetric(
-                      vertical: 13,
-                      horizontal: 15,
-                    ),
-                  ),
-                  shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
+                ),
+                shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
-                  ))),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

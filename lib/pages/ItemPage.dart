@@ -164,7 +164,7 @@ class ItemPage extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              for (int i = 5; i < 10; i++)
+                              for (int i = 1; i <= 5; i++)
                                 Container(
                                   height: 30,
                                   width: 30,
@@ -196,10 +196,10 @@ class ItemPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.symmetric(vertical: 8),
                       child: Row(
                         children: [
-                          Text(
+                          const Text(
                             'Color',
                             style: TextStyle(
                               fontSize: 18,
@@ -207,7 +207,7 @@ class ItemPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Row(

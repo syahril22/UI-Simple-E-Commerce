@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
-  const CategoriesWidget({super.key});
+  CategoriesWidget({super.key});
+
+  List<String> myTitleCategory = [
+    'Dasi idn',
+    'Seaptu idn',
+    'Seragam 1 idn',
+    'Seragam 2 idn'
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +16,7 @@ class CategoriesWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          for (int i = 1; i < 5; i++)
+          for (int i = 0; i < myTitleCategory.length; i++)
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 10),
               padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
@@ -20,13 +27,13 @@ class CategoriesWidget extends StatelessWidget {
               child: Row(
                 children: [
                   Image.asset(
-                    'images/$i.jpeg',
+                    'images/${i + 1}.jpeg',
                     width: 40,
                     height: 40,
                   ),
-                  const Text(
-                    'Sandal',
-                    style: TextStyle(
+                  Text(
+                    myTitleCategory[i],
+                    style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
                         color: Color(0xFF4C53A5)),
